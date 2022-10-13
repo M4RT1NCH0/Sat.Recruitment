@@ -10,6 +10,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Sat.Recruitment.DataAccessLayer.Abstract;
+using Sat.Recruitment.DataAccessLayer.Concrete;
+using Sat.Recruitment.Business.Abstract;
+using Sat.Recruitment.Business.Concrete;
 
 namespace Sat.Recruitment.Api
 {
@@ -27,6 +31,8 @@ namespace Sat.Recruitment.Api
         {
             services.AddControllers();
             services.AddSwaggerGen();
+            services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IUserRepository, UserRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

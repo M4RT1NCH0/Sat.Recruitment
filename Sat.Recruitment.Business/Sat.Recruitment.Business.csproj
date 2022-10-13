@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Sat.Recruitment.Core\Sat.Recruitment.Core.csproj" />
+    <ProjectReference Include="..\Sat.Recruitment.DataAccessLayer\Sat.Recruitment.DataAccessLayer.csproj" />
+  </ItemGroup>
+
+</Project>
